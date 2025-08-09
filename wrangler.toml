@@ -1,0 +1,13 @@
+name = "germanlingo"
+account_id = ""
+
+[build]
+command = "npm run build"
+
+[site]
+bucket = "dist"
+entry-point = "dist"
+
+[site.custom_domains]
+domain = "germanlingo.com"
+www = "www.germanlingo.com"
