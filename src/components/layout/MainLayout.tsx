@@ -16,7 +16,7 @@ export default function MainLayout() {
       <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur">
         <div className="container mx-auto px-6 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <span className="font-heading text-xl font-bold">Germanlingo</span>
+            <span className="font-heading text-xl font-bold">German Lingo</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
@@ -66,8 +66,8 @@ export default function MainLayout() {
       <footer className="mt-16 border-t">
         <div className="container mx-auto px-6 py-10 grid md:grid-cols-4 gap-8">
           <div>
-            <h4 className="font-heading font-semibold mb-3">Germanlingo</h4>
-            <p className="text-muted-foreground">Learn German online with tailored, friendly lessons.</p>
+            <h4 className="font-heading font-semibold mb-3">German Lingo</h4>
+            <p className="text-muted-foreground">Your Journey to German Fluency Starts Here</p>
           </div>
           <div>
             <h5 className="font-heading font-semibold mb-3">Quick Links</h5>
@@ -107,7 +107,7 @@ export default function MainLayout() {
           </div>
         </div>
         <div className="border-t py-4 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Germanlingo. All rights reserved.
+          © {new Date().getFullYear()} German Lingo. All rights reserved.
         </div>
       </footer>
     </div>
