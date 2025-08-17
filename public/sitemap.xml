@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://germanlingo.com/</loc>
+    <lastmod>2025-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://germanlingo.com/about</loc>
+    <lastmod>2025-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://germanlingo.com/contact</loc>
+    <lastmod>2025-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://germanlingo.com/blog</loc>
+    <lastmod>2025-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Add blog posts here as they're published -->
+  <url>
+    <loc>https://germanlingo.com/blog/german-culture-through-food</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://germanlingo.com/blog/essential-german-phrases-for-travelers</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+  <url>
+    <loc>https://germanlingo.com/blog/german-grammar-made-easy</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+</urlset>
