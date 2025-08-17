@@ -25,48 +25,37 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitting(true);
+    
+    const subject = `New Contact Form Submission from ${formData.name}`;
+    const body = `
+Name: ${formData.name}
+Email: ${formData.email}
+Level: ${formData.level}
+Preferred Time: ${formData.preferredTime || 'Not specified'}
 
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+Message:
+${formData.message}
+    `;
 
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || 'Failed to send message');
-      }
-
-      toast({
-        title: "Message sent!",
-        description: "I'll get back to you within 24 hours to confirm your lesson.",
-      });
-
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        level: 'Beginner',
-        message: '',
-        preferredTime: ''
-      });
-    } catch (error) {
-      console.error('Error:', error);
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again later.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    // Open default mail client
+    window.location.href = `mailto:stefanie@germanlingo.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Show success message
+    toast({
+      title: "Email client opened!",
+      description: "Please send the pre-filled email to contact me.",
+    });
+    
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      level: 'Beginner',
+      message: '',
+      preferredTime: ''
+    });
   };
 
   return (
